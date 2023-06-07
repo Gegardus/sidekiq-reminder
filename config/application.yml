@@ -1,0 +1,9 @@
+REDIS_URL: redis://127.0.0.1:6379/5
+
+or
+
+# .env
+REDIS_URL=redis://127.0.0.1:6379/5
+
+# Redis URL Format
+redis://host:port/db_number
