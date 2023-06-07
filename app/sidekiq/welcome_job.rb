@@ -1,7 +1,10 @@
 class WelcomeJob
   include Sidekiq::Job
 
-  def perform(*args)
-    # Do something
+  def perform(user_id)
+    user = User.find(user_id)
+    return if user.nil?
+
+    UserMailer.with(user: user).welcome_email.deliver_later 
   end
 end

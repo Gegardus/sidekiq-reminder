@@ -61,6 +61,6 @@ class UsersController < ApplicationController
 
   # set up strong parameter
   def user_params
-    params.permit(:username, :first_name, :last_name, :birthday_date)
+    params.permit(:username, :first_name, :last_name, :birthday_date, :email)
   end
 end
