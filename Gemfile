@@ -74,3 +74,4 @@ end
 
 gem 'sidekiq', '<7'
 gem 'sidekiq-scheduler', git: 'https://github.com/sidekiq-scheduler/sidekiq-scheduler.git'
+gem 'httparty'
