@@ -5,3 +5,4 @@ class User < ApplicationRecord
     WelcomeJob.perform_in(10.minutes, id)
   end    
 end
+  

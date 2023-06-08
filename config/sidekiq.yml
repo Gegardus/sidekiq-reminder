@@ -1,0 +1,6 @@
+
+:scheduler:
+  :schedule:
+    Reminder:
+      cron: '0 9 * * *'
+      class: ReminderJob

@@ -64,3 +64,4 @@ class UsersController < ApplicationController
     params.permit(:username, :first_name, :last_name, :birthday_date, :email)
   end
 end
+
